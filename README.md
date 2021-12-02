@@ -1,7 +1,9 @@
 # submodule-test
 Test of git submodules
 
-# Better Global
+[gitconfig]:https://git-scm.com/docs/git-config
+
+# Better Global [gitconfig]
 
 These are really the most imporant step required.
 
@@ -16,7 +18,6 @@ git config diff.submodule log
 # Will update submodules on checkouts.
 git config submodule.recurse 1
 ```
-
 
 # [githooks]
 
