@@ -12,17 +12,27 @@ git config diff.submodule log
 ```
 
 
-You create a new submodule
+# [githooks]
 
 ``` bash
-git submodule add https://github.com/qjhart/mod-part.git
-git submodule add https://github.com/qjhart/mod-part.git part2
+mkdir ~/.githooks
+git config --global core.hooksPath ~/.githooks
+
+cat - <<"Q" > ~/.githooks/post-checkout
+#! /bin/bash
+
+echo "Check for submodules!"
+Q
+chmod +x ~/.githooks/post-checkout
+```
+
+## Aliases
+
+
+``` bash
+git config --global alias.cl 'clone --recursive'
+
 ```
 
 
-## [githooks]
-
-Rather than relying on the users git configuration, we
-
-[githooks]:https://git-scm.com/docs/githooks
 [cheatsheet]:https://faun.pub/git-submodule-cheatsheet-29a3bfe443c3
