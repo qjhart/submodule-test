@@ -1,6 +1,10 @@
 # submodule-test
 Test of git submodules
 
+# Better Global
+
+These are really the most imporant step required.
+
 ``` bash
 # make it so that git status will include changes to submodules.
 git config status.submodulesummary 1
@@ -9,6 +13,8 @@ git config status.submodulesummary 1
 # instead of just the previous and current commit hashes.
 git config diff.submodule log
 
+# Will update submodules on checkouts.
+git config submodule.recurse 1
 ```
 
 
