@@ -1,7 +1,18 @@
 # submodule-test
 Test of git submodules
 
-You create a new submodule in you
+``` bash
+# make it so that git status will include changes to submodules.
+git config status.submodulesummary 1
+
+# make it so that git diff will show a list of submodule commit messages
+# instead of just the previous and current commit hashes.
+git config diff.submodule log
+
+```
+
+
+You create a new submodule
 
 ``` bash
 git submodule add https://github.com/qjhart/mod-part.git
