@@ -1,0 +1,6 @@
+[submodule "mod-part"]
+	path = mod-part
+	url = https://github.com/qjhart/mod-part.git
+[submodule "part2"]
+	path = part2
+	url = https://github.com/qjhart/mod-part.git
