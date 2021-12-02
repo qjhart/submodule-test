@@ -1,6 +1,8 @@
 # submodule-test
 Test of git submodules
 
+# Git configuration settings
+
 ``` bash
 # make it so that git status will include changes to submodules.
 git config status.submodulesummary 1
@@ -9,6 +11,7 @@ git config status.submodulesummary 1
 # instead of just the previous and current commit hashes.
 git config diff.submodule log
 
+git config submodule.recurse 1
 ```
 
 
